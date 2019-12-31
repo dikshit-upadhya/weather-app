@@ -8,7 +8,7 @@ const temperatureField = document.querySelector('.weather_condition_temperature_
 const errorField = document.querySelector('.container')
 
 // network requirements 
-const url = 'http://localhost:3000/weather?address='
+const url = '/weather?address='
 
 // DOM requirements
 

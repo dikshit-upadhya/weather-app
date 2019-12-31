@@ -5,6 +5,8 @@ const { geocode } = require('./model/geocode')
 const { forecast } = require('./model/forecast')
 
 const app = express()
+const port = process.env.PORT
+
 const indexDir = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname, '../template/views')
 const partialsPath = path.join(__dirname, '../template/partials')
@@ -73,6 +75,6 @@ app.get('/weather', (req,res) => {
 })
 
 
-app.listen(3000,() => {
+app.listen(port,() => {
   console.log('the server is just working fine!')
 })
