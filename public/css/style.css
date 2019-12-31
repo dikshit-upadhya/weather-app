@@ -1,0 +1,333 @@
+/* ############ all the default styling for the default elements ########### */
+
+*{
+  box-sizing: border-box;
+}
+.row{
+  display: flex;
+  width: 100%;
+}
+.row::after{
+  display: block;
+  clear: both;
+  content: "";
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*="col-"]{
+  /* border:2px solid red; */
+  padding:;
+  float: left;
+  display:block;
+}
+body{
+  margin:0px;
+  padding:0px;
+}
+/* ############### styling for the header ############ */
+
+header{
+
+}
+
+.search_field{
+  padding: 5px 0 5px 40%;
+  margin-right:-20px;
+}
+.search_button{
+  padding: 5px 40% 5px 0;
+  margin-left:-20px;
+}
+.search_field_input{
+  outline:none;
+  width:100%;
+  padding:3px 14px;
+  line-height: 1.9;
+  font-size:19px;
+  border-radius:20px;
+  border:none;
+  /* position:relative; */
+  position:relative;
+  top:30px;
+  box-shadow: 0 0 0 2px rgba(33,150,253,0.4);
+  transition: box-shadow 0.3s;
+}
+.search_field_input:active{
+  box-shadow: 0 0 0 4px rgba(33,150,253,0.6);
+  border:0;
+}
+.search_field_input:focus{
+  box-shadow: 0 0 0 4px rgba(33,150,253,0.6);
+  border:0;
+}
+.search_button_submit{
+  outline:none;
+  position:relative;
+  top:29px;
+  width:60%;
+  padding:3px 7px;
+  line-height: 2.15;
+  font-size:18px;
+  border-radius:20px;
+  border:none;
+  box-shadow: 0 0 5px 3px rgba(25,118,210,0.3);
+  transition: box-shadow 0.3s;
+  text-transform: capitalize;
+  /* font-weight:bold; */
+  background-color:rgba(25,118,210);
+  color:white;
+  letter-spacing:1.3px;
+
+}
+.search_button_submit:hover{
+  box-shadow: 0 0 10px 5px rgba(100,181,246,0.9);
+  border:none;
+}
+
+
+/* ########### main display box styling ############### */
+
+.container{
+  margin:0 5% 5% 5%;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 0 10px 5px rgba(40,53,147,0.6);
+  /* background-color:rgba(0,0,0,0.1); */
+  /* box-shadow:1px 1px 1px 1px; */
+  min-height:40vh;
+}
+.error-message{
+  display:block;
+  /* height: ; */
+  margin: 80px 100px 0 100px;
+  color:black;
+  font-family: arial;
+  font-size: 60px;
+}
+.error-message-lower{
+  display:block;
+  /* height: ; */
+  margin: 40px 100px 70px 100px;
+  font-family: arial;
+  color:#37474f;
+}
+.container-1{
+  background-color:rgba(0,0,0,0.06);
+  padding-right:10%;
+  padding-top:30px;
+}
+.container-2{
+  background-color:rgba(0,0,0,0.2);
+  padding-top:50px;
+  padding-bottom:20px;
+  padding-right:10px;
+}
+.weather_condition_icon,
+.weather_condition_description,
+.weather_condition_temperature{
+  padding-left:25%;
+
+}
+
+.weather_condition_icon_element,
+.weather_condition_description_element,
+.weather_condition_temperature_element{
+  margin:0;
+  padding:0;
+}
+.weather_condition_icon{
+
+}
+.weather_condition_description{
+  padding-top:30px;
+}
+.weather_condition_description_element{
+  font-family:Britannic;
+  font-size:45;
+  color:rgba(94,53,177,0.7);
+}
+.weather_condition_temperature{
+  padding-top:30px;
+  padding-bottom:30px;
+}
+.weather_condition_temperature_element{
+  font-family:sans-serif;
+  font-weight:100;
+}
+.weather_condition_temperature_element_numeric{
+  color:rgba(255,23,68);
+  font-size:30px;
+  font-weight:700;
+}
+
+
+[class*="weather_sec_"]{
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-left:10%;
+  margin-right:5%;
+  font-size:20px;
+  font-family:Britannic;
+}
+
+.weather_sec_min_temp{
+  font-style:oblique;
+  color:rgba(255,23,68,0.8);
+}
+.weather_sec_max_temp{
+  font-style:italic;
+  color:rgba(255,23,68,0.8);
+}
+.weather_sec_humidity{
+
+}
+.weather_sec_pressure{
+
+}
+.weather_sec_wind_speed{
+
+}
+.weather_sec_sunInfo{
+
+}
+
+/* ############ section of the email and the creator panel stuff ############## */
+
+.container-mail_box{
+  display:block;
+  width:100%;
+  background-image:linear-gradient(rgb(62, 81, 187),rgb(57, 118, 146),rgb(49, 132, 199));
+  min-height:300px;
+}
+
+[class*="mail"]{
+
+}
+.container-mailBox{
+  padding:10% 0 10% 15%;
+}
+.mail_heading{
+  margin:0;
+  padding:0;
+  font-family:Cooper Black;
+  letter-spacing:3px;
+  font-size:35px;
+  line-height:2;
+}
+.mail_box-email{
+
+}
+.mail_box-email input{
+    font-weight:700;
+}
+.mail_box-message input{
+
+}
+.mail_box-submitButton{
+  padding-right:30%;
+  text-align:center;
+}
+.mail_box-submitButton input{
+  line-height:2;
+  border-radius:10px;
+  margin:0 0 30px 0;
+  max-width:250px;
+  width:40%;
+  padding:2px 8px;
+  font-weight:700;
+  background-color:rgba()
+  font-size:18px;
+  outline:none;
+  text-align:center;
+  text-overflow:ellipsis;
+}
+[class*="mail_box-"] input{
+  line-height:2;
+  border-radius:10px;
+  margin:0 0 30px 0;
+  width:80%;
+  padding:2px 8px;
+  font-size:20px;
+
+  outline:none;
+  text-overflow:ellipsis;
+}
+.container-creatorPanel{
+  margin-top:20%;
+  margin-right:20%;
+  margin-bottom:20%;
+  padding:10% 5%;
+  box-shadow: 0 0 0 1px rgba(0,0,0, 0.65), 5px 5px 10px 0 rgba(0,0,0,0.55);
+  border-radius:10px;
+  background-image:linear-gradient(rgb(62, 81, 187),rgb(57, 118, 146),rgb(49, 132, 199));
+}
+.creator_image{
+
+}
+.creator_image img{
+  height:150px;
+  width:150px;
+  border-radius:100px;
+  max-width:100%;
+  box-shadow: 0 0 0 1px rgba(0,0,0, 0.65), 5px 5px 10px 0 rgba(0,0,0,0.55);
+}
+.creatorName{
+  font-family:monospace;
+  font-weight:bolder;
+  letter-spacing:0px;
+  font-size:30px;
+  color:rgba(26,35,126,1);
+
+}
+.creatorDescription{
+  font-weight:600;
+  font-family:monospace;
+  line-height: 1;
+  letter-spacing:1px;
+}
+
+[class*="creator"]{
+  text-align:center;
+}
+
+/* ######### just an added footer section for the site to look good ############## */
+
+footer.footsy{
+  width:100%;
+  background:#666;
+  margin:0;
+  padding-bottom:2%;
+
+}
+.footsy ul{
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.4;
+  color:#fff;
+  font-weight: 500;
+  margin:0;
+
+}
+.footsy h1{
+  color:#fff;
+
+
+}
+.footsy .row{
+  padding-left: 10%;
+  overflow:none;
+}
+.col-3.clasStack{
+  max-width:100%;
+}
