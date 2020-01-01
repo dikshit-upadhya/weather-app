@@ -17,7 +17,7 @@ hbs.registerPartials(partialsPath)
 app.use(express.static(indexDir))
 
 app.get('', (req,res) => {
-  res.render('index', {
+  res.render('index', { 
     temperature: '13',
     summary: 'Partly Cloudy',
     location: 'Duliajan'
