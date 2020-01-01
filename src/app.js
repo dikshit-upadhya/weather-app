@@ -21,7 +21,8 @@ app.get('', (req,res) => {
   res.render('index', { 
     temperature: '13',
     summary: 'Partly Cloudy',
-    location: 'Duliajan'
+    location: 'Duliajan',
+    message: 'this is an alpha stage of the app, so there may be some problems in the view-port as well as the weather conditions must not be showing up, the second display box and the mail boxes are curently not working, you can still look up the weather of major places of our country using the search bar'
   })
 })
 
