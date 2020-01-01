@@ -3,9 +3,10 @@ const path = require('path')
 const express = require('express')
 const { geocode } = require('./model/geocode')
 const { forecast } = require('./model/forecast')
-const ftc = require('fahrenheit-to-celcius')
+const ftc = require('fahrenheit-to-celsius')
+
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 const indexDir = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname, '../template/views')
