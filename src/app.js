@@ -3,7 +3,7 @@ const path = require('path')
 const express = require('express')
 const { geocode } = require('./model/geocode')
 const { forecast } = require('./model/forecast')
-
+const ftc = require('fahrenheit-to-celcius')
 const app = express()
 const port = process.env.PORT
 
@@ -66,7 +66,7 @@ app.get('/weather', (req,res) => {
 
       res.send({
         summary,
-        temperature: temp,
+        temperature: ftc(temp),
         address: location
       })
     })
